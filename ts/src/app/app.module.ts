@@ -9,6 +9,7 @@ import { MainSectionComponent } from './components/main-section/main-section.com
 import { MainDetalhesComponent } from './components/main-detalhes/main-detalhes.component';
 import { MainResumoComponent } from './components/main-resumo/main-resumo.component';
 import { MainDiscussoesComponent } from './components/main-discussoes/main-discussoes.component';
+import { MainRodapeComponent } from './components/main-rodape/main-rodape.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MainDiscussoesComponent } from './components/main-discussoes/main-discu
     MainSectionComponent,
     MainDetalhesComponent,
     MainResumoComponent,
-    MainDiscussoesComponent
+    MainDiscussoesComponent,
+    MainRodapeComponent
   ],
   imports: [
     BrowserModule
