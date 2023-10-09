@@ -1,0 +1,141 @@
+/* Menu fixo layout desktop */
+#menu{
+  height: 100%;
+  width: auto;
+  position: fixed;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.language-menu{
+  margin-left: 50px;
+  margin-top: 30px;
+  visibility: hidden;
+  background: #FDF1EB;
+  width: 97px;
+  height: 34px;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.language-menu img {
+  line-height: 34px;
+}
+
+#title-menu{
+  width: 220px;
+  height: 68px;
+  background: linear-gradient(0deg,#ED7839 0%,#FFB455 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title-menu h2{
+  letter-spacing: .3px;
+  color: #FFFFFF;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35.16px;
+}
+
+#normal-menu img {
+  margin: 0px;
+  padding: 0px;
+}
+
+#normal-menu ul{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+#normal-menu li {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  width: 220px;
+  height: 33px;
+  border-bottom: 1.8px solid #e0e0e0;
+}
+
+#normal-menu li a{
+  letter-spacing: .3px;
+  padding-left: 24px;
+  text-decoration: none;
+  color: #725C5C;
+  font-family: 'Quicksand';
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18.75px;
+  width: 220px;
+  transition: .1s;
+}
+
+#normal-menu .selected{
+  height: 33px;
+  line-height: 33px;
+  border-left: solid 5px;
+  border-image: linear-gradient(0deg,#ED7839 0%,#FFB455 100%) 1;
+  background: #FDF1EB;
+}
+
+#normal-menu li:hover {
+  background: #FDF1EB;
+}
+
+#normal-menu li:hover a {
+  padding-left: 29px;
+}
+
+/* Menu layout mobile */
+#compact-menu {
+  visibility: hidden;
+  display: none;
+}
+
+#menu-hamburguer{
+  width: 25px;
+  height: 29px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+#menu-mobile {
+  padding: 30px 0px 10px 0px;
+  font-family: 'Roboto';
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(180deg,#ED7839 100%,#FFB455 100%);
+  display: none;
+}
+
+#menu-mobile ul {
+  padding: 0;
+}
+
+#menu-mobile ul li {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+#menu-mobile a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.bar{
+  display: block;
+  width: 26px;
+  height: 5px;
+  background: #fff;
+  margin-bottom: 4px;
+  border-radius: 8px;
+}
