@@ -1,0 +1,42 @@
+.abstract {
+  margin-top: 30px;
+  box-sizing: border-box;
+  border: 1px solid #ECECEC;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: "Quicksand";
+  font-weight: 400;
+  line-height: 21.33px;
+  letter-spacing: 2%;
+}
+
+.abstract h2 {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  border-bottom: 1px solid #ECECEC;
+  background: #FDF1EB;
+  box-sizing: border-box;
+  padding: 11px 15px 9px 15px;
+}
+
+.abstract p {
+  margin-top: 30px;
+  text-align: justify;
+  margin: 15px;
+}
+
+#view-more {
+  padding-left: 2px;
+  color: #ED7839;
+  cursor: pointer;
+}
+
+#view-more:hover{
+  border-bottom: 1px solid #ED7839;
+}
+
+#text{
+  display: none;
+}
