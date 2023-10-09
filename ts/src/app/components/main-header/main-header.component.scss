@@ -1,0 +1,163 @@
+/* Informações do conteúdo e de usuário */
+#content{
+  background: #FDF1EB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title-content{
+  height: 68px;
+  padding: 5px 0px 4px 36px;
+  box-sizing: border-box;
+  color: #725C5C;
+  font-family: "Roboto";
+}
+
+#title-content span, #title-content p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#title-content h2{
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.language{
+  background: #FDF1EB;
+  width: 97px;
+  height: 34px;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.language img {
+  line-height: 34px;
+}
+
+#globo{
+  padding-bottom: 2px;
+}
+#content-right{
+  display: flex;
+  justify-content: baseline;
+}
+
+.profile {
+  margin-right: 36px;
+}
+
+.profile ul {
+  list-style: none;
+  font-family: "Quicksand";
+  text-align: right;
+  margin-right: 6.85px;
+  color: #333333;
+  font-weight: 400;
+}
+
+.profile ul h5{
+  font-size: 14px;
+}
+
+.profile p {
+  font-size: 12px;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile img {
+  border-radius: 100%;
+  width: 36px;
+}
+
+.notification{
+  font-size: 10px;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #fff;
+  background-color: #F85959;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 11.72px;
+  position: absolute;
+  right: -1px;
+  top: -2px;
+}
+
+.user{
+  position: relative;
+}
+
+@media(max-width: 1280px){
+  #title-content{
+      padding: 0px 0px 0px 36px;
+  }
+
+  #title-content span, #title-content p {
+    font-size: 12px;
+  }
+
+  #title-content h2{
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .profile li p{
+   display: none;
+  }
+
+  .profile ul{
+    line-height: 32px;
+  }
+}
+
+@media(max-width: 955px){
+  .language{
+      display: none;
+   }
+}
+
+@media(max-width: 856px){
+  .user{
+      justify-self: center;
+  }
+
+  #content-right h5{
+      display: none;
+   }
+}
+
+@media (max-width: 768px){
+  header{
+      width: 100%;
+  }
+
+  #content{
+      display: none;
+  }
+
+  .profile{
+      margin: 0px;
+  }
+
+  .profile ul{
+      color: #fff;
+      line-height: 32px;
+  }
+
+  #title-content {
+    display: none;
+}
+}
+
