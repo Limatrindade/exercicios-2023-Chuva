@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-resumo.component.scss']
 })
 export class MainResumoComponent implements OnInit {
+  containerVisible = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleContainer() {
+    this.containerVisible = !this.containerVisible;
   }
 
 }
