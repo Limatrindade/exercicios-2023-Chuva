@@ -141,13 +141,21 @@
 }
 
 /* Layout responsivo */
-@media(max-width: 955px){
-  .language{
-      display: none;
-   }
+@media(max-width: 1280px){
+  .profile ul{
+      line-height: 32px;
+  }
+}
 
+@media(max-width: 955px){
    #menu .language-menu{
       visibility: visible;
+  }
+}
+
+@media(max-width: 856px){
+  .user{
+      justify-self: center;
   }
 }
 
@@ -168,6 +176,7 @@
   #title-menu {
        display: none;
   }
+
 
   #normal-menu {
       display: none;
@@ -204,3 +213,5 @@
       line-height: 1.2;
   }
 }
+
+

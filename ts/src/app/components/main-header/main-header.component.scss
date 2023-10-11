@@ -104,28 +104,30 @@
   position: relative;
 }
 
+/* Layout responsivo */
 @media(max-width: 1280px){
   #title-content{
       padding: 0px 0px 0px 36px;
   }
 
   #title-content span, #title-content p {
-    font-size: 12px;
+      font-size: 12px;
   }
 
   #title-content h2{
-    font-size: 14px;
-    font-weight: 600;
+      font-size: 14px;
+      font-weight: 600;
   }
 
   .profile li p{
-   display: none;
+     display: none;
   }
 
   .profile ul{
-    line-height: 32px;
+      line-height: 32px;
   }
 }
+
 
 @media(max-width: 955px){
   .language{
@@ -162,7 +164,7 @@
   }
 
   #title-content {
-    display: none;
-}
+      display: none;
+  }
 }
 

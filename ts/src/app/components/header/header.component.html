@@ -20,7 +20,7 @@
 </header>
 
 <!-- Menu layout mobile -->
-<header id="responsive-menu">
+<header id="responsive-menu" (click)="toggleMobileMenu()">
   <nav id="compact-menu">
       <div id="menu-hamburguer">
           <span class="bar"></span>
@@ -34,11 +34,11 @@
           </ul>
           <span class="user">
               <div class="notification">2</div>
-              <img src="images/user.png" alt="Foto de perfil">
+              <img src="../../../assets/images/user.png" alt="Foto de perfil">
           </span>
       </div>
   </nav>
-  <nav id="menu-mobile">
+  <nav id="menu-mobile" [style.display]="mobileMenuVisible ? 'block' : 'none'">
       <ul>
           <li><a href="#">Apresentação</a></li>
           <li><a href="#">Comitês</a></li>
