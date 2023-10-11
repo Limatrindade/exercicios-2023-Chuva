@@ -3,7 +3,7 @@ section {
   margin: 20px 45px 0px 36px;
 }
 
-h1{
+h2{
   font-family: "Roboto";
   font-size: 20px;
   font-weight: 900;
@@ -88,7 +88,7 @@ h1{
 
 /* Layout responsivo */
 @media(max-width: 1280px){
-  h1{
+  h2{
       font-size: 18px;
   }
 
@@ -103,7 +103,7 @@ h1{
 
 
 @media(max-width: 955px){
-   h1{
+   h2{
       width: auto;
       margin-right: 0;
   }
