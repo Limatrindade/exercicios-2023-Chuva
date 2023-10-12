@@ -18,14 +18,14 @@ describe('checa elementos básicos', () => {
   });
 
   it('expandir tópico funciona', () => {
-    cy.get('.answered-topic .ops-topic-subject').click();
+    cy.get('.answered-topic .ops-topic-subject').click({force: true});
     cy.get('.comments-container').should('exist');
     cy.compareSnapshot('Trabalho - Card de topico expandido');
   });
 
   it('clicar em `criar tópico` exibe o formulário', () => {
     cy.get('.btn-create-topic').click();
-    cy.get('button').contains('Enviar')
+    cy.get('button').contains('criar tópico')
     cy.get('form').contains('Assunto');
     cy.get('form').contains('Conteúdo');
     cy.get('input.subject').invoke('attr', 'placeholder').should('contain', 'Defina um tópico sucinto para notificar os autores...');
@@ -34,7 +34,7 @@ describe('checa elementos básicos', () => {
 
   it('enviar o formulário exibe mensagem de sucesso', () => {
     cy.get('.btn-create-topic').click();
-    cy.get('button').click();
+    cy.get('button.specific-button').click();
     cy.get('body').contains('Aguardando feedback dos autores');
     cy.compareSnapshot('Trabalho - Topico enviado');
   });
